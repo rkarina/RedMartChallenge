@@ -20,7 +20,6 @@
 
   .MainSection {
     width: calc(100% - 300px);
-    float: left;
   }
 }
 
@@ -71,12 +70,19 @@ div.NavButton:hover, div.ItemButton:hover, .NavButton label:hover {
     flex-wrap: wrap;
     overflow: auto;
     height: calc(100% - 50px);
-    width: 100%;
     background-color: aliceblue;
 }
 
 .BrowseButton {
   background-color: aliceblue !important;
+}
+
+.BrowseButton:hover {
+  background-color: white !important;
+}
+
+.NavButton:hover, .ItemButton > div:hover {
+  background-color: lightpink;
 }
 
 .NavButton {
