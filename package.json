@@ -1,0 +1,21 @@
+{
+  "name": "redmart_codechallenge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-loader": "^8.0.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "yarn": "^1.9.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "webpack": "^4.18.0"
+  }
+}

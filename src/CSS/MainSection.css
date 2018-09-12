@@ -1,0 +1,155 @@
+/** Styling for recommended devices (992px over) **/
+@media (min-width: 992px) {
+
+.NavButton {
+  color: black;
+  background-color: indianred;
+  height: 30px;
+  min-width: 90px;
+  width: auto;
+}
+
+.FilterColumn {
+    height: calc(100% - 40px);
+    float: left;
+    width: auto;
+    min-width: 300px;
+    background-color: deepskyblue;
+    display: flex;
+}
+
+  .MainSection {
+    width: calc(100% - 300px);
+    float: left;
+  }
+}
+
+/** Styling for mobile/smaller devices **/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .FilterColumn {
+    opacity: 0;
+  }
+
+  .FilterColumn.ShowCol {
+      height: calc(100% - 40px);
+      float: left;
+      width: auto;
+      min-width: 300px;
+      background-color: deepskyblue;
+  }
+
+  .MainSection {
+    width: 100%;
+    float: left;
+  }
+}
+
+/** Common Styling **/
+div.NavButton:hover, div.ItemButton:hover, .NavButton label:hover {
+    cursor: pointer;
+}
+
+.Actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainSection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    float: left;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.BrowseButton {
+  background-color: aliceblue !important;
+}
+
+.NavButton {
+  color: black;
+  border: solid thin black;
+  background-color: indianred;
+  height: 30px;
+  min-width: 90px;
+  width: auto;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.NavButton > label {
+  line-height: 30px;
+}
+
+.TopBar .NavButton {
+  float: right;
+  padding: 5px  5px 5px 0;
+}
+
+.MainSection .ItemDetail {
+  max-width: 230px;
+  width: calc(32% - 15px);
+  margin: 5px;
+  border: solid thin black;
+  padding: 5px;
+  height: auto;
+}
+
+.ItemDetail {
+  background-color: white;
+}
+
+.ItemDetail > div {
+  float: left;
+  width: 100%;
+  height: auto;
+  min-height: 30px;
+}
+
+.ItemPrice  {
+  font-weight: bold;
+}
+
+.ItemDetail > .ItemHeading {
+  height: auto;
+  min-height: 70px;
+}
+
+.ItemDetail > label {
+  white-space: nowrap;
+}
+
+.ItemImage {
+  min-height: 100px !important;
+  height: auto;
+}
+
+.ItemImage > img {
+  height: 100%;
+  width: 100%;
+}
+
+.ItemButton > div {
+  text-align: center;
+  background-color: indianred;
+  padding: 10px 5px 5px 5px;
+  border-radius: 5px;
+  border: solid thin black;
+}
+
+.ItemButton:hover {
+  cursor: pointer;
+}
